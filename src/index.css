@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 覆蓋tailwind預設樣式 */
+@layer components{
+    .btn {
+        @apply py-1 px-4 bg-green-500 text-white font-semibold rounded-lg;
+    }
+    
+    .btn-danger:hover{
+        @apply  bg-red-500
+    }
+    
+  }
